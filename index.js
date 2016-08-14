@@ -1,5 +1,6 @@
 const fs = require('fs')
 const express = require('express')
+const morgan = require('morgan')
 const baseball = require('baseball')
 const twilio = require('twilio')
 const bodyParser = require('body-parser')
@@ -19,6 +20,9 @@ let messageQueue = []
 let userMap = {
     "76561198051009569": "+16034405544"
 }
+
+// use morgan
+app.use(morgan('combined'))
 
 // serve public/
 app.use(serveStatic('public'))
