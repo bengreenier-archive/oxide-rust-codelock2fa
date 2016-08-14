@@ -1,0 +1,21 @@
+{
+  "name": "oxide-rust-codelock2fa",
+  "version": "0.1.0",
+  "description": "the service behind the oxide-rust-codelock2fa rust plugin",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Greenier",
+  "license": "ISC",
+  "dependencies": {
+    "baseball": "^0.2.0",
+    "body-parser": "^1.15.2",
+    "botbuilder": "^3.2.3",
+    "express": "^4.14.0",
+    "request-promise": "^4.1.1",
+    "serve-static": "^1.11.1",
+    "twilio": "^2.9.2"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>CodeLock 2FA</title>
+
+    <!-- Set the viewport width to device width for mobile -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- SEO metas -->
+	<meta name="keywords" content="rust, codelock, 2fa" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+	<link rel="stylesheet" type="text/css" href="/styles/font-awesome.min.css">
+	
+</head>
+<body>
+	<div class="header">
+		<a href="/"><img src="/images/codelock2fa_logo.png" alt="codelock2fa logo" id="logo"/></a>
+	</div>
+	<div class="content">
+		<h1>What?</h1>
+		<p>A <a href="http://playrust.com">Rust</a> <a href="http://oxidemod.org">Oxide</a> plugin to enable 2FA (two factor auth) for
+		your codelock doors in game.</p>
+		<h1>How?</h1>
+        <h2>Signup</h2>
+		<table style="margin: auto;">
+			<tr>
+				<th>Steam ID</th>
+				<th>Mobile Phone</th>
+			</tr>
+			<tr>
+				<td><input id="steam" type="text" placeholder="Your Steam ID" /></td>
+				<td><input id="mobile" type="text" placeholder="Your Phone Number" /></td>
+			</tr>
+		</table>
+		<button id="submit">Register</button>
+
+		<h2>Install Oxide Plugin</h2>
+		<button>Download now</button>
+	</div>
+
+	<!-- Scripts -->
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="/scripts/custom.js"></script>
+</body>
+</html>
