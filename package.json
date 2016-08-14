@@ -12,9 +12,7 @@
   "dependencies": {
     "baseball": "^0.2.0",
     "body-parser": "^1.15.2",
-    "botbuilder": "^3.2.3",
     "express": "^4.14.0",
-    "request-promise": "^4.1.1",
     "serve-static": "^1.11.1",
     "twilio": "^2.9.2"
   }
