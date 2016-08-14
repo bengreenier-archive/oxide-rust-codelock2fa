@@ -65,7 +65,7 @@ app.get("/2fa", (req, res) => {
             setTimeout(() => {
                 clearInterval(pollInterval)
                 res.send(401, {error: "no response from user"})
-            }, 60 * 1000)
+            }, 40 * 1000)
             
         }
     })
