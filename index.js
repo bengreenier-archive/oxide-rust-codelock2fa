@@ -24,7 +24,7 @@ let userMap = {
 app.use(serveStatic('public'))
 
 app.get("/", (req, res) => {
-    res.sendFile("public/index.html")
+    res.send(fs.readFileSync("public/index.html"))
 })
 
 // called by game plugin
