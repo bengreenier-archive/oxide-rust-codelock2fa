@@ -76,13 +76,13 @@ app.get("/2fa", (req, res) => {
 })
 
 // called by twilio response
-app.post("/2fa", (req, res, next) => {
+app.post("/2fa", /*(req, res, next) => {
     if (twilio.validateExpressRequest(req, process.env.TWILIO_TOKEN)) {
         next()
     } else {
         return res.send(403, {error: "you aren't twilio"})
     }
-}, bodyParser.urlencoded({extended: true}), (req, res) => {
+},*/ bodyParser.urlencoded({extended: true}), (req, res) => {
     let msg = req.body
 
     // add number to queue if body looks good
