@@ -9,10 +9,12 @@ A [Rust](http://playrust.com) [Oxide](http://oxidemod.org) plugin to enable 2FA 
 + Visit [rust2fa.azurewebsites.net](https://rust2fa.azurewebsites.net) and sign up
 + Start Rust
 + Make a door with a CodeLock
++ Set code to 0000
 
 ## Usage
 
-Once installed, any CodeLock door you created will require 2FA
+Once installed, any `0000` coded door that is locked and hasn't been 2FA unlocked
+for the requestor in the last 10 minutes will require 2FA.
 
 ## License
 
